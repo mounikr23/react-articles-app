@@ -22,3 +22,14 @@
     max-width: 1140px;
     margin: 3.5rem auto;
 }
+
+.home-autoComplete {
+    margin: 0 auto;
+    max-width: 1140px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 50px;
+    position: relative;
+
+}

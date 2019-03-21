@@ -7,7 +7,12 @@ import {
 const defaultState = {
     articles: []
 }
-
+const getUsersList = (articles) => {
+    const users = articles.map(article => {
+        return article.user.name;
+    })
+    return users;
+}
 export default (state = defaultState, { type, payload }) => {
     switch (type) {
         case GET_ARTICLES_DATA:
@@ -15,9 +20,11 @@ export default (state = defaultState, { type, payload }) => {
                 ...state,
             }
         case GET_ARTICLES_DATA_SUCCESS:
+            const usersList = getUsersList(payload);
             return {
                 ...state,
-                articles: payload
+                articles: payload,
+                usersList
             }
         case GET_ARTICLES_DATA_FAILURE:
             return {

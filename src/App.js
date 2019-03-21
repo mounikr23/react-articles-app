@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import UserDetails from './pages/UserDetails';
 import ArticleDetails from './pages/ArticleDetails';
+import Header from './components/Header';
 import './App.css';
 
 class App extends Component {
@@ -10,9 +11,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <div>
-          <header className="header">
-            <p className="logo">Articles Hub</p>
-          </header>
+          <Header />
         </div>
         <div className="main-container">
           <BrowserRouter>
