@@ -1,25 +1,26 @@
 import {
-    GET_ARTICLES_DATA,
-    GET_ARTICLES_DATA_SUCCESS,
-    GET_ARTICLES_DATA_FAILURE
-} from '../actionTypes';
+    GET_USER_DETAILS,
+    GET_USER_DETAILS_SUCCESS,
+    GET_USER_DETAILS_FAILURE
+} from "../actionTypes";
 
 const defaultState = {
-    articles: []
+    userDetails: {}
 }
 
 export default (state = defaultState, { type, payload }) => {
     switch (type) {
-        case GET_ARTICLES_DATA:
+        case GET_USER_DETAILS:
             return {
                 ...state,
             }
-        case GET_ARTICLES_DATA_SUCCESS:
+        case GET_USER_DETAILS_SUCCESS:
+            const { data, id } = payload;
             return {
                 ...state,
-                articles: payload
+                userDetails: data[id].user
             }
-        case GET_ARTICLES_DATA_FAILURE:
+        case GET_USER_DETAILS_FAILURE:
             return {
                 ...state,
             }

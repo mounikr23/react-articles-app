@@ -11,7 +11,6 @@ class App extends Component {
       <React.Fragment>
         <div>
           <header className="header">
-            {/* <img src={logo} className="App-logo" alt="logo" /> */}
             <p className="logo">Articles Hub</p>
           </header>
         </div>

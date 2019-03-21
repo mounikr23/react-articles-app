@@ -39,30 +39,27 @@ class ArticleDetails extends Component {
                 <div className="articleDetails-header">
                     <div className="articleDetails-innerContent">
                         <a className="backButton" href='/'>Homepage</a>
-
                         <h2 className="articleDetails-mainText">
                             {articleDetails.heading}
                         </h2>
                         <div className="article-userWrapper">
                             <img className="user-image" alt={user.fullname} src={userImg} />
                             <div className="user-nameContainer">
-                                <p className="articleDetailsUser-name">
+                                <a href={`/user/${articleDetails.id}`} className="articleDetailsUser-name">
                                     {user.fullname}
-                                </p>
+                                </a>
                                 <span className="articleDetails-date">
                                     {getRandomDate()}
                                 </span>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div className="articleDetails-content">
                     <p className="articleDetails-description">
                         {articleDetails.description}
                     </p>
                     <div className="articleDetails-commentsWrapper">
-
                         <p className="articleDetails-commentsHeading">Comments:</p>
                         {
                             comments.map(comment => (
@@ -71,8 +68,7 @@ class ArticleDetails extends Component {
                         }
                     </div>
                 </div>
-
-            </div>
+            </div >
         )
     }
 }

@@ -44,7 +44,7 @@ class Home extends Component {
                     {
                         articles.map(article => (
                             <Article
-                                key={article.user}
+                                key={article.user.name}
                                 data={article}
                                 onArticleClick={this.handleArticleClick}
                             />
