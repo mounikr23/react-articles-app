@@ -1,0 +1,24 @@
+.home-header {
+    color: #FFF;
+    margin: 0 auto;
+    padding: 40px 30px;
+    text-align: center;
+    background-color: #5CB85C;
+}
+
+.header-mainText {
+    margin: 0;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.header-subText {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.home-content {
+    max-width: 1140px;
+    margin: 3.5rem auto;
+}
