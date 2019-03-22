@@ -23,6 +23,7 @@ export default (state = defaultState, { type, payload }) => {
         case GET_USER_DETAILS_FAILURE:
             return {
                 ...state,
+                error: payload
             }
         default:
             return {

@@ -1,14 +1,9 @@
-p{
-  cursor: default;
+p {
   margin: 0;
 }
 
 .App {
   text-align: center;
-}
-
-.main-container {
-  /* padding: 2rem 0; */
 }
 
 .backButton {
@@ -17,7 +12,7 @@ p{
   text-decoration: none;
 }
 
-.backButton::before{
+.backButton::before {
   content: '';
   border: solid #fff;
   border-width: 0 2px 2px 0;

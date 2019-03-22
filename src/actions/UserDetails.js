@@ -29,7 +29,7 @@ export function getUserDetailsFailure(payload) {
 export function fetchUserDetails(id) {
     return dispatch => {
         dispatch(getUserDetails());
-        return request(`https://my-json-server.typicode.com/mounikr23/articles-data/articlesById`)
+        return request('https://my-json-server.typicode.com/mounikr23/articles-data/articlesById')
             .then(response => {
                 dispatch(getUserDetailsSuccess({ data: response, id }));
             })

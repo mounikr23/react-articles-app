@@ -26,6 +26,7 @@ export default (state = defaultState, { type, payload }) => {
         case GET_ARTICLE_DETAILS_FAILURE:
             return {
                 ...state,
+                error: payload
             }
         default:
             return {
